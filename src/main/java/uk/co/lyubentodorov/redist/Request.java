@@ -20,9 +20,9 @@ public class Request
     public String buildResponse()
     {
         // check if values are in db.
-        String pageEntry = "";
-        String sizeEntry = "";
-        String zoomFactorEntry = "";
+        String pageEntry = verifyEntry(RedisClient.getClient().fetch(page), "page");
+        String sizeEntry = verifyEntry(RedisClient.getClient().fetch(size), "size");
+        String zoomFactorEntry = verifyEntry(RedisClient.getClient().fetch(zoomFactor), "zoom factor");
 
         return String.format("[\"page - %s\", \"size - %s\", \"zoomFactor - %s\"]",
                 pageEntry, sizeEntry, zoomFactorEntry);
