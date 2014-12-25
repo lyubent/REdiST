@@ -8,5 +8,20 @@
     <artifactId>redist-lyubent</artifactId>
     <version>1.0.1</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>1.1.7.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20140107</version>
+        </dependency>
+    </dependencies>
 
+    <properties>
+        <start-class>uk.co.lyubentodorov.redist.RESTApplication</start-class>
+    </properties>
 </project>

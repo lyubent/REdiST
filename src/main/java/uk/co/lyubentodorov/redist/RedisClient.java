@@ -1,8 +1,10 @@
 package uk.co.lyubentodorov.redist;
 
 /**
- * Created by lyubentodorov
+ * Access DB Layer and retrieves data. Implemented as
+ * singleton to save DB connections.
  */
 public class RedisClient
 {
+    // todo...
 }
